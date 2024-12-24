@@ -1,0 +1,325 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000000, #ffffff);
+  background-size: 100% 200%;
+  animation: gradient 10s infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
+
+  0% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 24px;
+  color: #6c00aa;
+  font-weight: bold;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.contacts a {
+  color: #6c00aa;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  height: 60vh;
+  background: url('tattoo-background.jpg') no-repeat center center/cover;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  color: #6c00aa;
+  font-size: 62px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-block {
+  width: 400px;
+  height: 400px;
+  padding: 5rem;
+  background-color: #efefef00;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-block p {
+  margin: 5px;
+}
+
+.stats-section {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #000, #111);
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.stats-title {
+  color: #ff4500;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  color: #fff;
+}
+
+.stat-number {
+  font-size: 48px;
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #999;
+}
+
+.stat-item p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.buttons-container {
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.vk {
+  background-color: #0077ff;
+}
+
+.call {
+  background-color: #ff4500;
+}
+
+.calculator-section {
+  padding: 30px 20px;
+  color: #ff4500;
+  background-color: #111;
+  margin-top: 20px;
+}
+
+.calculator-section h2 {
+  margin-bottom: 10px;
+}
+
+.calculator-section p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.vk-chat-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #45668e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.vk-chat-button img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.telegram-chat-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0088CC;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.telegram-chat-button img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#phone-number {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 15px;
+  background-color: #ff1c1c;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.block {
+  width: calc(25% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.block img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.block .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  background-color: rgba(255, 255, 255, 0.679);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  top: 35%;
+}
+
+.block:hover .overlay {
+  display: block;
+}
+
+.block a {
+  color: white;
+  text-decoration: none;
+  top: 50%;
+}
+
+@media (max-width: 768px) {
+  .block {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .block {
+    width: 100%;
+  }
+}
